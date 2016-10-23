@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账    号："
+            android:textSize="25dp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edittext1"
+            android:layout_width="240dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码："
+            android:textSize="25dp"
+            />
+        <EditText
+            android:id="@+id/edittext2"
+            android:inputType="textPassword"
+            android:layout_width="240dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="sharedPreferences写入"
+            android:id="@+id/spRead"
+            android:onClick="spWrite"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="sharedPreferences读取"
+            android:id="@+id/spWrite"
+            android:onClick="spRead"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROM写入"
+            android:id="@+id/romWrite"
+            android:onClick="ROMWrite"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROM读取"
+            android:id="@+id/romRead"
+            android:onClick="ROMRead" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SD卡写入"
+            android:id="@+id/SDWrite"
+            android:onClick="SDWrite"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SD卡读取"
+            android:id="@+id/SDRead"
+            android:onClick="SDRead"/>
+    </LinearLayout>
+
+</LinearLayout>
